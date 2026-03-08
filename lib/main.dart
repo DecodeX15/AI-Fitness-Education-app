@@ -12,11 +12,11 @@ void main() async {
   print("User data debug ");
   print("All keys: ${prefs.getKeys()}");
   print("goals: ${prefs.getStringList("goals")}");
-  print("time: ${prefs.getStringList("time")}");
+  print("custom_goal: ${prefs.getString("custom_goal")}");
   print("motivation: ${prefs.getStringList("motivation")}");
-  print("injury: ${prefs.getStringList("injury")}");
-  print("level: ${prefs.getString("level")}");
   print("custom_motivation: ${prefs.getString("custom_motivation")}");
+  print("level: ${prefs.getString("level")}");
+  print("custom_injury: ${prefs.getString("custom_injury")}");
 
   bool isOnboarded =
       prefs.containsKey("goals") &&

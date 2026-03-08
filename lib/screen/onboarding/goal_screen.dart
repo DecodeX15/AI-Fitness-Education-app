@@ -29,9 +29,7 @@ class _GoalScreenState extends State<GoalScreen> {
 
   void _toggle(String goal) {
     setState(() {
-      _selected.contains(goal)
-          ? _selected.remove(goal)
-          : _selected.add(goal);
+      _selected.contains(goal) ? _selected.remove(goal) : _selected.add(goal);
     });
   }
 
@@ -49,9 +47,11 @@ class _GoalScreenState extends State<GoalScreen> {
       canContinue: _selected.isNotEmpty,
       onContinue: () {
         final goals = List<String>.from(_selected);
-        final custom = _customController.text.trim();
-        if (custom.isNotEmpty) goals.add(custom);
         userData['goals'] = goals;
+        final customgoal = _customController.text.trim();
+        if (customgoal.isNotEmpty) {
+          userData['custom_goal'] = customgoal;
+        }
 
         Navigator.push(
           context,

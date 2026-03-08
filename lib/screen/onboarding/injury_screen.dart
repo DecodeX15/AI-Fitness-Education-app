@@ -56,10 +56,11 @@ class _InjuryScreenState extends State<InjuryScreen> {
       canContinue: _selected.isNotEmpty,
       onContinue: () {
         final injuries = List<String>.from(_selected);
-        final custom = _customController.text.trim();
-        if (custom.isNotEmpty) injuries.add(custom);
+        final custominjury = _customController.text.trim();
         userData['injury'] = injuries;
-
+        if (custominjury.isNotEmpty) {
+          userData['custom_injury'] = custominjury;
+        }
         Navigator.push(
           context,
           MaterialPageRoute(builder: (_) => const FitnessLevelScreen()),
