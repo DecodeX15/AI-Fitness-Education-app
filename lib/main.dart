@@ -26,7 +26,6 @@ void main() async {
       prefs.containsKey("level");
 
   print("Is onboarded: $isOnboarded");
-
   runApp(MyApp(isOnboarded));
 }
 
