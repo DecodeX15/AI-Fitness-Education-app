@@ -3,6 +3,12 @@ import '../../theme/app_theme.dart';
 import '../home_screen.dart';
 import '../../services/storage_service.dart';
 import '../../data/user_data.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import '../../services/onnx_service.dart';
+import '../../services/tokenizer_service.dart';
+import '../../services/allembeddings.dart';
+import '../../services/tags_generations.dart';
+
 class AiSetupScreen extends StatefulWidget {
   const AiSetupScreen({super.key});
 
@@ -28,10 +34,72 @@ class _AiSetupScreenState extends State<AiSetupScreen>
       vsync: this,
       duration: const Duration(milliseconds: 1200),
     )..repeat(reverse: true);
+
     _runSteps();
   }
 
+  Future<List<String>> _runModel(String text) async {
+    final onnx = OnnxService();
+    await onnx.init();
+    final tokenizer = TokenizerService();
+    await tokenizer.init();
+    final store = EmbeddingStore();
+    await store.init();
+    final tagGen = TagsGenerations(onnx, tokenizer, store);
+    final tags = await tagGen.getBestTags(text);
+    return tags;
+  }
+
+  Future<void> _processCustomInputs() async {
+    final prefs = await SharedPreferences.getInstance();
+    final alreadyProcessed = prefs.getBool("ai_onboarding_done") ?? false;
+    if (alreadyProcessed) {
+      return;
+    }
+    print("AI onboarding running first time.");
+    if (userData["custom_goal"] != null &&
+        userData["custom_goal"].toString().isNotEmpty) {
+      print("Previous Goals: ${userData["goals"]}");
+      final tags = await _runModel(userData["custom_goal"]);
+      print("Model response: $tags");
+      final goalTags = tags.take(3).toList();
+      List<String> goals = List<String>.from(userData["goals"] ?? []);
+      goals.addAll(goalTags);
+      userData["goals"] = goals;
+      print("Updated Goals: ${userData["goals"]}");
+    }
+
+    if (userData["custom_injury"] != null &&
+        userData["custom_injury"].toString().isNotEmpty) {
+      print("Previous Injuries: ${userData["injuries"]}");
+      final tags = await _runModel(userData["custom_injury"]);
+      print("Model response: $tags");
+      final injuryTags = tags.sublist(3, 6);
+      List<String> injuries = List<String>.from(userData["injuries"] ?? []);
+      injuries.addAll(injuryTags);
+      userData["injuries"] = injuries;
+      print("Updated Injuries: ${userData["injuries"]}");
+    }
+
+    if (userData["custom_motivation"] != null &&
+        userData["custom_motivation"].toString().isNotEmpty) {
+      print("Previous Motivation: ${userData["motivation"]}");
+      final tags = await _runModel(userData["custom_motivation"]);
+      print("Model response: $tags");
+      final motivationTags = tags.sublist(6, 9);
+      List<String> motivation = List<String>.from(userData["motivation"] ?? []);
+      motivation.addAll(motivationTags);
+      userData["motivation"] = motivation;
+      print("Updated Motivation: ${userData["motivation"]}");
+    }
+
+    await prefs.setBool("ai_onboarding_done", true);
+    print("AI onboarding completed and locked.");
+  }
+
   Future<void> _runSteps() async {
+    await _processCustomInputs();
+
     for (var i = 0; i < _steps.length; i++) {
       await Future.delayed(const Duration(seconds: 1));
       if (!mounted) return;
@@ -40,7 +108,9 @@ class _AiSetupScreenState extends State<AiSetupScreen>
 
     await Future.delayed(const Duration(milliseconds: 600));
     if (!mounted) return;
+
     await StorageService.saveUserData(userData);
+
     Navigator.pushReplacement(
       context,
       MaterialPageRoute(builder: (_) => const HomeScreen()),
@@ -82,6 +152,7 @@ class _AiSetupScreenState extends State<AiSetupScreen>
               ),
 
               const SizedBox(height: 32),
+
               ...List.generate(_steps.length, (i) {
                 final step = _steps[i];
                 return Padding(

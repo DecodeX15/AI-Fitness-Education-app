@@ -10,13 +10,7 @@ void main() async {
   final prefs = await SharedPreferences.getInstance();
 
   print("User data debug ");
-  print("All keys: ${prefs.getKeys()}");
-  print("goals: ${prefs.getStringList("goals")}");
-  print("custom_goal: ${prefs.getString("custom_goal")}");
-  print("motivation: ${prefs.getStringList("motivation")}");
-  print("custom_motivation: ${prefs.getString("custom_motivation")}");
-  print("level: ${prefs.getString("level")}");
-  print("custom_injury: ${prefs.getString("custom_injury")}");
+  print(".............. All keys: ${prefs.getKeys()}");
 
   bool isOnboarded =
       prefs.containsKey("goals") &&
