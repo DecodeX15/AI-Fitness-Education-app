@@ -21,7 +21,7 @@ void main() async {
       prefs.containsKey("motivation") &&
       prefs.containsKey("injury") &&
       prefs.containsKey("level");
-
+  // await prefs.clear();
   print("Is onboarded: $isOnboarded");
   runApp(MyApp(isOnboarded));
 }

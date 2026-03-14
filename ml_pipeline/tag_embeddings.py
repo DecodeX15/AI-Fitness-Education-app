@@ -4,7 +4,7 @@ import onnxruntime as ort
 from transformers import AutoTokenizer
 
 tokenizer = AutoTokenizer.from_pretrained("minilm_model")
-session = ort.InferenceSession("onnx_model/model.onnx")
+session = ort.InferenceSession("../assets/model.onnx")
 
 def embed(text):
     inputs = tokenizer(text, return_tensors="np")
@@ -14,7 +14,7 @@ def embed(text):
     sentence_embedding = token_embeddings.mean(axis=1)[0]
     return sentence_embedding.tolist()
 
-with open("tags_db.json") as f:
+with open("../assets/tags_db.json") as f:
     tags = json.load(f)
 
 result = {}
@@ -27,7 +27,7 @@ for category, items in tags.items():
             "embedding": embed(tag)
         })
 
-with open("tag_embeddings.json", "w") as f:
+with open("../assets/tag_embeddings.json", "w") as f:
     json.dump(result, f, indent=2)
 
 print("Tag embeddings generated successfully")

@@ -54,6 +54,7 @@ class _AiSetupScreenState extends State<AiSetupScreen>
     final prefs = await SharedPreferences.getInstance();
     final alreadyProcessed = prefs.getBool("ai_onboarding_done") ?? false;
     if (alreadyProcessed) {
+      print("already processed here");
       return;
     }
     print("AI onboarding running first time.");
@@ -65,6 +66,7 @@ class _AiSetupScreenState extends State<AiSetupScreen>
       final goalTags = tags.take(3).toList();
       List<String> goals = List<String>.from(userData["goals"] ?? []);
       goals.addAll(goalTags);
+      goals = goals.map((e) => e.toLowerCase().replaceAll(" ", "_")).toSet().toList();
       userData["goals"] = goals;
       print("Updated Goals: ${userData["goals"]}");
     }
@@ -77,6 +79,7 @@ class _AiSetupScreenState extends State<AiSetupScreen>
       final injuryTags = tags.sublist(3, 6);
       List<String> injuries = List<String>.from(userData["injuries"] ?? []);
       injuries.addAll(injuryTags);
+      injuries = injuries.map((e) => e.toLowerCase().replaceAll(" ", "_")).toSet().toList();
       userData["injuries"] = injuries;
       print("Updated Injuries: ${userData["injuries"]}");
     }
@@ -89,6 +92,7 @@ class _AiSetupScreenState extends State<AiSetupScreen>
       final motivationTags = tags.sublist(6, 9);
       List<String> motivation = List<String>.from(userData["motivation"] ?? []);
       motivation.addAll(motivationTags);
+      motivation = motivation.map((e) => e.toLowerCase().replaceAll(" ", "_")).toSet().toList();
       userData["motivation"] = motivation;
       print("Updated Motivation: ${userData["motivation"]}");
     }

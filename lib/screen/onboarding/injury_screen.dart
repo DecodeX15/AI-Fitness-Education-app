@@ -57,7 +57,7 @@ class _InjuryScreenState extends State<InjuryScreen> {
       onContinue: () {
         final injuries = List<String>.from(_selected);
         final custominjury = _customController.text.trim();
-        userData['injury'] = injuries;
+        userData['injuries'] = injuries;
         if (custominjury.isNotEmpty) {
           userData['custom_injury'] = custominjury;
         }
