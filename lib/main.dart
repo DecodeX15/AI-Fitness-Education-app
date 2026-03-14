@@ -11,7 +11,10 @@ void main() async {
 
   print("User data debug ");
   print(".............. All keys: ${prefs.getKeys()}");
-
+  final keys = prefs.getKeys();
+  for (var key in keys) {
+    print("$key : ${prefs.get(key)}");
+  }
   bool isOnboarded =
       prefs.containsKey("goals") &&
       prefs.containsKey("time") &&

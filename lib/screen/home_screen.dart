@@ -82,7 +82,7 @@ class _HomeScreenState extends State<HomeScreen> {
             const SizedBox(height: 28),
 
             Text(
-              "Your 4 exercises of today by AI",
+              "Your 4 exercises of today",
               style: textTheme.titleMedium,
             ),
 
