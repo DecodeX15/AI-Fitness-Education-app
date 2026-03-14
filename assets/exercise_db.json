@@ -11,14 +11,10 @@
     "intensity": "moderate",
     "goal_tags": ["mobility", "warmup", "fat_burn"],
     "estimated_duration": "45s",
+    "instructions": "Stand with feet about shoulder width apart and keep your chest upright. Lower your body into a squat by bending the knees and pushing the hips back. As you stand up extend the hips and reach both arms overhead then return to start and repeat.",
     "overview": "A dynamic squat variation that adds an overhead reach to increase mobility and coordination.",
-    "benefits": ["lower_body_mobility", "leg_activation", "hip_warmup", "shoulder_warmup"],
+    "benefits": "Improves lower body mobility activates legs and warms up hips and shoulders",
     "contraindications": ["knee_injury", "severe_hip_pain"],
-    "instructions": [
-      "Keep feet shoulder-width apart and chest upright throughout.",
-      "Push hips back and bend knees to lower into the squat.",
-      "As you stand, extend hips fully and reach both arms overhead."
-    ],
     "is_lottie": true,
     "animation_link": "https://lottiefiles.com/free-animation/squat-reach-Dp1w6IjOlQ"
   },
@@ -34,14 +30,10 @@
     "intensity": "high",
     "goal_tags": ["power", "fat_burn", "conditioning"],
     "estimated_duration": "30s",
+    "instructions": "Stand with feet shoulder width apart and lower into a controlled squat position. Explosively jump upward by driving through the heels and extending the hips and knees. Land softly with bent knees then immediately transition into the next squat.",
     "overview": "A plyometric squat designed to develop explosive leg power.",
-    "benefits": ["leg_power", "cardiovascular_intensity", "athletic_performance"],
+    "benefits": "Increases leg power boosts cardiovascular intensity and improves athletic performance",
     "contraindications": ["knee_injury", "ankle_injury"],
-    "instructions": [
-      "Start with feet shoulder-width apart and lower into a controlled squat.",
-      "Drive through your heels and jump explosively upward.",
-      "Land softly with bent knees and flow straight into the next squat."
-    ],
     "is_lottie": true,
     "animation_link": "https://lottiefiles.com/free-animation/jumping-squats-9hzVV8Ohi6"
   },
@@ -50,21 +42,17 @@
     "name": "Squat Kicks",
     "type": "bodyweight",
     "primary_muscles": ["quadriceps", "glutes"],
-    "secondary_muscles": ["core", "hip flexors"],
+    "secondary_muscles": ["core", "hip_flexors"],
     "body_region": "full body",
     "movement_pattern": "squat + kick",
     "difficulty": "intermediate",
     "intensity": "moderate",
     "goal_tags": ["cardio", "coordination"],
     "estimated_duration": "40s",
+    "instructions": "Begin standing with feet shoulder width apart and lower into a squat. Rise back up and extend one leg forward in a controlled kick while keeping the core engaged. Return the foot down then repeat the squat and alternate legs.",
     "overview": "A dynamic lower body movement combining squats and alternating kicks.",
-    "benefits": ["coordination", "balance", "lower_body_endurance"],
+    "benefits": "Improves coordination balance and lower body endurance",
     "contraindications": ["knee_injury", "hip_pain"],
-    "instructions": [
-      "Lower into a squat with feet shoulder-width apart and core tight.",
-      "As you rise, extend one leg forward in a controlled kick.",
-      "Return the foot down and alternate legs with each rep."
-    ],
     "is_lottie": true,
     "animation_link": "https://lottiefiles.com/free-animation/squat-kicks-2UaqzO5zfR"
   },
@@ -80,14 +68,10 @@
     "intensity": "very_high",
     "goal_tags": ["cardio", "conditioning", "fat_burn"],
     "estimated_duration": "30s",
+    "instructions": "Start standing then drop into a squat and place hands on the floor. Kick the feet back into a plank position then quickly return the feet toward the hands. Jump upward explosively reaching the arms overhead before starting the next repetition.",
     "overview": "A high intensity full body conditioning movement combining squat plank and jump.",
-    "benefits": ["heart_rate", "endurance", "full_body_strength"],
+    "benefits": "Raises heart rate quickly improves endurance and full body strength",
     "contraindications": ["heart_condition", "joint_injuries"],
-    "instructions": [
-      "Drop into a squat, place hands on the floor, and kick feet back to plank.",
-      "Return feet to hands quickly and keep your core tight throughout.",
-      "Jump explosively upward and reach arms overhead to complete the rep."
-    ],
     "is_lottie": true,
     "animation_link": "https://lottiefiles.com/free-animation/burpee-and-jump-exercise-gCOcxxnr1X"
   },
@@ -103,14 +87,10 @@
     "intensity": "moderate",
     "goal_tags": ["strength", "upper_body"],
     "estimated_duration": "40s",
+    "instructions": "Start in a plank position with hands slightly wider than shoulder width. Lower your chest toward the floor by bending the elbows while keeping the body straight. Push through the palms to extend the arms and return to the starting position.",
     "overview": "A classic upper body strength exercise using bodyweight resistance.",
-    "benefits": ["chest_strength", "shoulder_strength", "tricep_strength", "core_stability"],
+    "benefits": "Strengthens chest shoulders triceps and core stability",
     "contraindications": ["wrist_pain", "shoulder_injury"],
-    "instructions": [
-      "Keep hands slightly wider than shoulders and body in a straight line.",
-      "Lower chest toward the floor with elbows bending in a controlled manner.",
-      "Push through palms to return to start without letting hips sag."
-    ],
     "is_lottie": true,
     "animation_link": "https://lottiefiles.com/free-animation/military-push-ups-sFmjfnsBQ9"
   },
@@ -126,14 +106,10 @@
     "intensity": "moderate",
     "goal_tags": ["core_stability", "balance"],
     "estimated_duration": "40s",
+    "instructions": "Start in a standard plank position with hands under shoulders and body aligned. Rotate the torso to one side while lifting one arm toward the ceiling forming a T shape with the body. Hold briefly then return to plank and alternate sides.",
     "overview": "A plank variation that introduces rotation and shoulder stability work.",
-    "benefits": ["core_stability", "shoulder_control", "balance"],
+    "benefits": "Enhances core stability shoulder control and balance",
     "contraindications": ["shoulder_injury", "lower_back_pain"],
-    "instructions": [
-      "Start in a solid plank with hands under shoulders and body aligned.",
-      "Rotate torso to one side and lift one arm toward the ceiling.",
-      "Hold briefly, return to plank, and alternate sides with control."
-    ],
     "is_lottie": true,
     "animation_link": "https://lottiefiles.com/free-animation/t-plank-exercise-g5qVU6RPYY"
   },
@@ -149,14 +125,10 @@
     "intensity": "moderate",
     "goal_tags": ["strength", "mobility"],
     "estimated_duration": "45s",
+    "instructions": "Stand upright and take a step forward with one leg. Lower the hips until both knees are bent roughly at right angles keeping the torso upright. Push through the front heel to return to standing and repeat with the other leg.",
     "overview": "A foundational lower body exercise focused on unilateral leg strength.",
-    "benefits": ["leg_strength", "balance", "mobility"],
+    "benefits": "Builds leg strength improves balance and enhances mobility",
     "contraindications": ["knee_injury", "severe_joint_pain"],
-    "instructions": [
-      "Step forward and lower hips until both knees are at right angles.",
-      "Keep torso upright and front knee aligned over the foot.",
-      "Push through the front heel to return to standing then alternate legs."
-    ],
     "is_lottie": false,
     "animation_link": "https://res.cloudinary.com/dyvolu8tc/video/upload/v1772802973/Character_Lunges_For_Both_Legs_jkvuon.mp4"
   },
@@ -165,21 +137,17 @@
     "name": "Mountain Climbers",
     "type": "bodyweight",
     "primary_muscles": ["core", "shoulders"],
-    "secondary_muscles": ["shoulders", "hip flexors"],
+    "secondary_muscles": ["shoulders", "hip_flexors"],
     "body_region": "full body",
     "movement_pattern": "cardio core",
     "difficulty": "intermediate",
     "intensity": "high",
     "goal_tags": ["cardio", "fat_burn", "core"],
     "estimated_duration": "30s",
+    "instructions": "Start in a high plank position with hands under shoulders and body straight. Drive one knee toward the chest while keeping the other leg extended. Quickly switch legs in a running motion while maintaining a strong plank posture.",
     "overview": "A fast paced core and cardio exercise performed from a plank position.",
-    "benefits": ["cardiovascular_fitness", "core_strength", "agility"],
+    "benefits": "Improves cardiovascular fitness core strength and agility",
     "contraindications": ["wrist_pain", "shoulder_injury"],
-    "instructions": [
-      "Hold a strong high plank with hands directly under shoulders.",
-      "Drive one knee toward the chest while the other leg stays extended.",
-      "Switch legs quickly in a running motion without letting hips rise."
-    ],
     "is_lottie": false,
     "animation_link": "https://res.cloudinary.com/dyvolu8tc/video/upload/v1772806453/mountain_cliber_yhpwqf.mp4"
   },
@@ -187,7 +155,7 @@
     "exercise_id": "EX009",
     "name": "Jumping Jacks",
     "type": "bodyweight",
-    "primary_muscles": ["full body"],
+    "primary_muscles": ["full_body"],
     "secondary_muscles": ["shoulders", "calves"],
     "body_region": "full body",
     "movement_pattern": "cardio",
@@ -195,14 +163,10 @@
     "intensity": "moderate",
     "goal_tags": ["cardio", "warmup"],
     "estimated_duration": "40s",
+    "instructions": "Stand upright with feet together and arms by your sides. Jump the feet outward while raising the arms overhead in a wide arc. Jump back to the starting position and continue rhythmically.",
     "overview": "A classic aerobic exercise often used during warm ups.",
-    "benefits": ["heart_rate", "coordination", "full_body_warmup"],
+    "benefits": "Increases heart rate improves coordination and warms the entire body",
     "contraindications": ["ankle_injury", "severe_knee_pain"],
-    "instructions": [
-      "Start with feet together and arms by your sides.",
-      "Jump feet outward while raising arms overhead in a wide arc.",
-      "Jump back to start and keep a steady rhythmic pace throughout."
-    ],
     "is_lottie": true,
     "animation_link": "https://lottiefiles.com/free-animation/jumping-jack-Q3NN7cRkd4"
   },
@@ -210,7 +174,7 @@
     "exercise_id": "EX010",
     "name": "Walking Hip Opener",
     "type": "bodyweight",
-    "primary_muscles": ["hip flexors", "glutes"],
+    "primary_muscles": ["hip_flexors", "glutes"],
     "secondary_muscles": ["core", "adductors", "abductors"],
     "body_region": "lower body",
     "movement_pattern": "dynamic mobility",
@@ -218,14 +182,10 @@
     "intensity": "low",
     "goal_tags": ["mobility", "warmup", "hip_activation"],
     "estimated_duration": "40s",
+    "instructions": "Stand upright and step forward with one leg while lifting the knee toward the chest. Rotate the lifted leg outward to open the hip while keeping the torso tall and core engaged. Place the foot down and continue stepping forward repeating the same movement with the opposite leg.",
     "overview": "A dynamic warm-up exercise where the hip is lifted and externally rotated while walking to improve mobility.",
-    "benefits": ["hip_mobility", "glute_activation", "lower_body_activation"],
+    "benefits": "Increases hip mobility activates glutes and prepares lower body for movement",
     "contraindications": ["hip_injury", "severe_groin_strain"],
-    "instructions": [
-      "Step forward and lift the knee toward the chest as you walk.",
-      "Rotate the lifted leg outward to open the hip with torso tall.",
-      "Place the foot down and repeat the same movement with the opposite leg."
-    ],
     "is_lottie": true,
     "animation_link": "https://lottiefiles.com/free-animation/walking-hip-opener-standard-yJtiYrJwk0"
   },
@@ -241,14 +201,10 @@
     "intensity": "high",
     "goal_tags": ["power", "conditioning", "fat_burn"],
     "estimated_duration": "30s",
+    "instructions": "Start in a lunge position with one foot forward and the other behind while keeping the torso upright. Jump explosively upward by pushing through both legs and switch the leg positions in midair. Land softly in the opposite lunge position with knees bent and immediately prepare for the next repetition.",
     "overview": "A plyometric lower body exercise where the athlete jumps from a split lunge and switches legs midair.",
-    "benefits": ["explosive_leg_power", "coordination", "cardiovascular_intensity"],
+    "benefits": "Develops explosive leg power improves coordination and increases cardiovascular intensity",
     "contraindications": ["knee_injury", "ankle_instability", "hip_pain"],
-    "instructions": [
-      "Begin in a lunge with torso upright and core engaged.",
-      "Jump explosively and switch leg positions in midair.",
-      "Land softly in the opposite lunge with bent knees and immediately reset."
-    ],
     "is_lottie": true,
     "animation_link": "https://lottiefiles.com/free-animation/split-jump-exercise-AHHpx1bumx"
   },
@@ -257,21 +213,17 @@
     "name": "Press Up Position Toe Tap",
     "type": "bodyweight",
     "primary_muscles": ["core"],
-    "secondary_muscles": ["shoulders", "glutes", "hip flexors"],
+    "secondary_muscles": ["shoulders", "glutes", "hip_flexors"],
     "body_region": "full body",
     "movement_pattern": "plank stability",
     "difficulty": "intermediate",
     "intensity": "moderate",
     "goal_tags": ["core_stability", "coordination"],
     "estimated_duration": "40s",
+    "instructions": "Start in a high plank position with hands placed directly under the shoulders and body in a straight line. Lift one foot slightly off the floor and tap it out to the side while keeping the hips stable and core engaged. Return the foot to the starting position and alternate sides while maintaining a strong plank posture.",
     "overview": "A plank variation where one foot taps outward to challenge stability and core control.",
-    "benefits": ["core_stability", "shoulder_endurance", "coordination"],
+    "benefits": "Improves core stability enhances shoulder endurance and develops coordination",
     "contraindications": ["wrist_pain", "shoulder_injury", "lower_back_pain"],
-    "instructions": [
-      "Start in a high plank with hands directly under shoulders.",
-      "Lift one foot and tap it out to the side keeping hips stable.",
-      "Return foot to start and alternate sides while maintaining plank form."
-    ],
     "is_lottie": true,
     "animation_link": "https://app.lottiefiles.com/animation/7a929433-b02b-492a-804d-cc77401ff35d?panel=download"
   },
@@ -287,13 +239,13 @@
     "intensity": "high",
     "goal_tags": ["power", "athletic_performance", "conditioning"],
     "estimated_duration": "30s",
+    "instructions": "Stand facing a sturdy box or platform with feet about shoulder width apart. Bend the knees and swing the arms back to generate momentum then jump explosively onto the box. Land softly with both feet on the platform keeping the knees slightly bent then step down carefully before repeating.",
     "overview": "A plyometric lower body exercise where the athlete jumps from the ground onto an elevated surface.",
-    "benefits": ["explosive_leg_power", "coordination", "lower_body_strength"],
-    "contraindications": ["knee_injury", "ankle_instability", "balance_disorders"],
-    "instructions": [
-      "Stand facing the box with feet shoulder-width apart.",
-      "Bend knees, swing arms back, and jump explosively onto the platform.",
-      "Land softly with bent knees then step down carefully before repeating."
+    "benefits": "Develops explosive leg power improves coordination and enhances lower body strength",
+    "contraindications": [
+      "knee_injury",
+      "ankle_instability",
+      "balance_disorders"
     ],
     "is_lottie": true,
     "animation_link": "https://app.lottiefiles.com/animation/d28256a7-806f-46d0-874a-ac89d4140679?panel=download"
@@ -302,7 +254,7 @@
     "exercise_id": "EX014",
     "name": "Cobra Stretch",
     "type": "bodyweight",
-    "primary_muscles": ["lower back"],
+    "primary_muscles": ["lower_back"],
     "secondary_muscles": ["abdominals", "shoulders", "chest"],
     "body_region": "core",
     "movement_pattern": "spinal extension",
@@ -310,13 +262,13 @@
     "intensity": "low",
     "goal_tags": ["mobility", "flexibility", "posture", "back_pain_relief"],
     "estimated_duration": "40s",
+    "instructions": "Lie face down on the floor with legs extended behind and palms placed under the shoulders. Press through the hands to lift the chest upward while keeping the hips and legs relaxed on the floor. Hold the position briefly while gently extending the spine then lower the torso back down in a controlled manner.",
     "overview": "A floor based spinal extension stretch commonly used in yoga and mobility routines.",
-    "benefits": ["spinal_mobility", "abdominal_stretch", "stiffness_relief"],
-    "contraindications": ["lower_back_injury", "spinal_disc_problems", "pregnancy_caution"],
-    "instructions": [
-      "Lie face down with legs extended and palms placed under shoulders.",
-      "Press through hands to lift the chest while keeping hips on the floor.",
-      "Hold the stretch briefly then lower torso back down with control."
+    "benefits": "Improves spinal mobility stretches abdominal muscles and helps reduce stiffness from prolonged sitting",
+    "contraindications": [
+      "lower_back_injury",
+      "spinal_disc_problems",
+      "pregnancy_caution"
     ],
     "is_lottie": true,
     "animation_link": "https://lottiefiles.com/free-animation/cobras-w0bL4N81bN"
@@ -333,14 +285,10 @@
     "intensity": "moderate",
     "goal_tags": ["cardio", "coordination", "upper_body"],
     "estimated_duration": "40s",
+    "instructions": "Stand with feet shoulder width apart and keep the knees slightly bent while engaging the core. Extend one arm forward in a straight punch while rotating the torso slightly for power. Quickly retract the arm and alternate punches while maintaining a steady rhythm.",
     "overview": "A simple cardio exercise inspired by boxing movements performed without equipment.",
-    "benefits": ["cardiovascular_activity", "coordination", "shoulder_strength", "arm_strength"],
+    "benefits": "Increases cardiovascular activity improves coordination and strengthens shoulders and arms",
     "contraindications": ["shoulder_injury", "elbow_pain", "wrist_injury"],
-    "instructions": [
-      "Keep knees slightly bent, core engaged, and stance stable.",
-      "Extend one arm forward with a slight torso rotation for power.",
-      "Quickly retract and alternate arms in a steady controlled rhythm."
-    ],
     "is_lottie": true,
     "animation_link": "https://lottiefiles.com/free-animation/punches-DK1guXUDFv"
   },
@@ -356,14 +304,10 @@
     "intensity": "moderate",
     "goal_tags": ["strength", "upper_body", "bodyweight"],
     "estimated_duration": "40s",
+    "instructions": "Start in a high plank position with hands placed wider than shoulder width on the floor. Lower your chest toward the ground by bending the elbows while keeping the body in a straight line from head to heels. Push through the palms to extend the arms and return to the starting position while maintaining core stability.",
     "overview": "A push-up variation where the hands are positioned wider to emphasize chest activation.",
-    "benefits": ["chest_engagement", "shoulder_strength", "upper_body_pushing_strength"],
+    "benefits": "Increases chest engagement strengthens shoulders and improves upper body pushing strength",
     "contraindications": ["wrist_pain", "shoulder_injury", "elbow_pain"],
-    "instructions": [
-      "Place hands wider than shoulders and keep body in a straight line.",
-      "Lower chest toward the floor with elbows flaring slightly outward.",
-      "Push through palms to return to start while keeping core tight."
-    ],
     "is_lottie": true,
     "animation_link": "https://lottiefiles.com/free-animation/wide-arm-push-up-KD96z4DT4Y"
   },
@@ -372,21 +316,17 @@
     "name": "Shoulder Stretch",
     "type": "bodyweight",
     "primary_muscles": ["shoulders"],
-    "secondary_muscles": ["upper back", "triceps"],
+    "secondary_muscles": ["upper_back", "triceps"],
     "body_region": "upper body",
     "movement_pattern": "static stretch",
     "difficulty": "beginner",
     "intensity": "low",
     "goal_tags": ["mobility", "flexibility", "warmup"],
     "estimated_duration": "40s",
+    "instructions": "Stand upright and extend one arm straight across the chest at shoulder height. Use the opposite hand to gently pull the extended arm closer to the body while keeping the shoulder relaxed. Hold the stretch briefly while breathing normally then switch arms and repeat.",
     "overview": "A simple upper body stretch that targets the shoulder muscles and improves joint mobility.",
-    "benefits": ["shoulder_flexibility", "stiffness_relief", "injury_prevention"],
+    "benefits": "Improves shoulder flexibility reduces stiffness and helps prevent injury during upper body exercises",
     "contraindications": ["shoulder_injury", "severe_rotator_cuff_tear"],
-    "instructions": [
-      "Extend one arm straight across the chest at shoulder height.",
-      "Use the opposite hand to gently pull the arm closer to the body.",
-      "Keep the shoulder relaxed, hold briefly, then switch arms."
-    ],
     "is_lottie": true,
     "animation_link": "https://lottiefiles.com/free-animation/shoulder-stretch-EN29iDeQQg"
   },
@@ -395,21 +335,17 @@
     "name": "Seated Abs Circles",
     "type": "bodyweight",
     "primary_muscles": ["core"],
-    "secondary_muscles": ["hip flexors", "obliques"],
+    "secondary_muscles": ["hip_flexors", "obliques"],
     "body_region": "lower body",
     "movement_pattern": "core rotation",
     "difficulty": "beginner",
     "intensity": "moderate",
     "goal_tags": ["core_strength", "stability", "mobility"],
     "estimated_duration": "40s",
+    "instructions": "Sit on the floor with knees bent and feet slightly lifted while leaning the torso slightly back. Place the hands on the floor beside the hips for support and engage the abdominal muscles. Move the knees together in a circular motion while keeping the core tight then reverse the direction after several repetitions.",
     "overview": "A seated core stability exercise where the legs move in circular patterns to engage abdominal muscles.",
-    "benefits": ["core_strength", "hip_control", "abdominal_endurance"],
+    "benefits": "Strengthens the core improves hip control and enhances abdominal endurance",
     "contraindications": ["lower_back_pain", "hip_flexor_strain"],
-    "instructions": [
-      "Sit with knees bent, feet lifted, and torso slightly leaned back.",
-      "Engage the core and move knees together in a circular motion.",
-      "Keep core tight throughout and reverse the direction after several reps."
-    ],
     "is_lottie": true,
     "animation_link": "https://lottiefiles.com/free-animation/seated-abs-circles-kgOH7mJGKJ"
   },
@@ -425,13 +361,13 @@
     "intensity": "moderate",
     "goal_tags": ["mobility", "warmup", "core_stability"],
     "estimated_duration": "40s",
+    "instructions": "Stand upright with feet hip width apart and bend forward to place the hands on the floor. Slowly walk the hands forward until the body reaches a high plank position while keeping the core engaged. Walk the feet forward toward the hands keeping the legs relatively straight then return to standing and repeat.",
     "overview": "A dynamic mobility exercise that transitions from standing to plank by walking the hands forward.",
-    "benefits": ["hamstring_flexibility", "core_activation", "shoulder_warmup", "posterior_chain"],
-    "contraindications": ["lower_back_injury", "severe_hamstring_strain", "wrist_pain"],
-    "instructions": [
-      "Bend forward from standing and place hands flat on the floor.",
-      "Walk hands forward until body reaches a high plank with core engaged.",
-      "Walk feet toward hands with legs relatively straight then return to standing."
+    "benefits": "Improves hamstring flexibility activates the core and warms up the shoulders and posterior chain",
+    "contraindications": [
+      "lower_back_injury",
+      "severe_hamstring_strain",
+      "wrist_pain"
     ],
     "is_lottie": true,
     "animation_link": "https://lottiefiles.com/free-animation/inchworm-oMKbWGAaDD"
@@ -440,22 +376,18 @@
     "exercise_id": "EX020",
     "name": "Reverse Crunches",
     "type": "bodyweight",
-    "primary_muscles": ["lower abdominals"],
-    "secondary_muscles": ["core", "hip flexors"],
+    "primary_muscles": ["lower_abdominals"],
+    "secondary_muscles": ["core", "hip_flexors"],
     "body_region": "core",
     "movement_pattern": "spinal flexion",
     "difficulty": "beginner",
     "intensity": "moderate",
     "goal_tags": ["core_strength", "abdominal", "bodyweight"],
     "estimated_duration": "40s",
+    "instructions": "Lie on your back with arms resting beside the body and knees bent with feet lifted off the floor. Engage the core and curl the hips upward lifting the knees toward the chest while keeping the upper back on the floor. Slowly lower the hips back down with control and repeat the movement without using momentum.",
     "overview": "A core focused abdominal exercise where the hips lift off the floor to target the lower abdominals.",
-    "benefits": ["lower_abdominal_strength", "core_stability", "spinal_control"],
+    "benefits": "Strengthens lower abdominal muscles improves core stability and supports spinal control",
     "contraindications": ["lower_back_injury", "abdominal_strain"],
-    "instructions": [
-      "Lie on your back with knees bent and feet lifted off the floor.",
-      "Curl hips upward lifting knees toward the chest using core strength only.",
-      "Lower hips slowly with control and avoid using momentum."
-    ],
     "is_lottie": true,
     "animation_link": "https://lottiefiles.com/free-animation/reverse-crunches-79P2FMTS7Z"
   },
@@ -471,13 +403,13 @@
     "intensity": "moderate",
     "goal_tags": ["strength", "lower_body", "functional"],
     "estimated_duration": "40s",
+    "instructions": "Stand facing a stable chair with feet hip width apart and place one foot firmly on the seat. Push through the heel of the elevated foot to lift the body upward until the standing leg is fully extended. Step back down with control and repeat the movement alternating legs.",
     "overview": "A functional lower body exercise where the body steps onto an elevated surface using leg strength.",
-    "benefits": ["leg_strength", "balance", "functional_movement"],
-    "contraindications": ["knee_injury", "balance_problems", "ankle_instability"],
-    "instructions": [
-      "Place one foot firmly on the chair and stand upright with core engaged.",
-      "Push through the heel to lift your body until the leg is fully extended.",
-      "Step down with control and alternate legs each rep."
+    "benefits": "Builds leg strength improves balance and enhances functional movement ability",
+    "contraindications": [
+      "knee_injury",
+      "balance_problems",
+      "ankle_instability"
     ],
     "is_lottie": true,
     "animation_link": "https://lottiefiles.com/free-animation/step-up-on-chair-zcvfCJwhkF"
@@ -494,14 +426,10 @@
     "intensity": "low",
     "goal_tags": ["glutes", "lower_body_strength", "posterior_chain"],
     "estimated_duration": "30-45s",
+    "instructions": "Lie on your back with knees bent and feet flat on the floor hip-width apart. Arms rest beside your body. Press through your heels and lift your hips upward until your body forms a straight line from shoulders to knees. Squeeze the glutes at the top, then slowly lower the hips back down. Repeat in a controlled motion.",
     "overview": "A bodyweight exercise that strengthens the glutes and posterior chain by lifting the hips from a supine position.",
-    "benefits": ["glute_strength", "hamstring_strength", "hip_stability", "lower_back_health", "posterior_chain"],
-    "contraindications": ["lower_back_pain", "hip_injury"],
-    "instructions": [
-      "Lie on your back with knees bent and feet flat on the floor.",
-      "Press through heels and lift hips until body forms a straight line.",
-      "Squeeze glutes at the top then lower slowly and repeat with control."
-    ],
+    "benefits": "Strengthens glutes and hamstrings, improves hip stability, supports lower back health, activates posterior chain.",
+    "contraindications": ["severe_lower_back_pain", "hip_injury"],
     "is_lottie": false,
     "animation_link": "https://res.cloudinary.com/dyvolu8tc/video/upload/v1772902865/Glute_Bridge_Animation_Generated_lhgqtm.mp4"
   },
@@ -517,61 +445,15 @@
     "intensity": "medium",
     "goal_tags": ["core_stability", "shoulder_stability", "balance"],
     "estimated_duration": "30-40s",
+    "instructions": "Start in a high plank position with hands under shoulders and body in a straight line. Keep feet slightly wider for balance. Lift one hand and tap the opposite shoulder while keeping hips stable. Return the hand to the floor and repeat with the other hand. Continue alternating in a controlled manner.",
     "overview": "A core stability exercise performed in a plank position while alternating shoulder taps to challenge balance and anti-rotation control.",
-    "benefits": ["core_stability", "shoulder_strength", "balance", "coordination", "anti_rotation_control"],
-    "contraindications": ["wrist_injury", "shoulder_injury", "severe_lower_back_injury"],
-    "instructions": [
-      "Hold a high plank with feet slightly wider apart for stability.",
-      "Lift one hand and tap the opposite shoulder while keeping hips still.",
-      "Return hand to floor and alternate sides in a controlled manner."
+    "benefits": "Improves core stability, strengthens shoulders, enhances balance and coordination, trains anti-rotation control.",
+    "contraindications": [
+      "wrist_injury",
+      "shoulder_injury",
+      "severe_lower_back_injury"
     ],
     "is_lottie": false,
     "animation_link": "https://res.cloudinary.com/dyvolu8tc/video/upload/v1772902865/Plank_Shoulder_Tap_Animation_Generated_ozbkjh.mp4"
-  },
-  {
-    "exercise_id": "EX024",
-    "name": "High Knees",
-    "type": "bodyweight",
-    "primary_muscles": ["hip flexors", "quadriceps"],
-    "secondary_muscles": ["core", "calves", "glutes"],
-    "body_region": "full body",
-    "movement_pattern": "cardio run",
-    "difficulty": "beginner",
-    "intensity": "high",
-    "goal_tags": ["cardio", "warmup", "fat_burn", "conditioning"],
-    "estimated_duration": "30s",
-    "overview": "A standing cardio exercise where alternating knees are driven upward rapidly to simulate running in place.",
-    "benefits": ["heart_rate", "cardiovascular_endurance", "hip_flexor_strength", "coordination"],
-    "contraindications": ["knee_pain", "hip_flexor_strain", "ankle_injury"],
-    "instructions": [
-      "Stand tall with feet hip-width apart and keep your core tight throughout.",
-      "Drive one knee up toward the chest and pump the opposite arm simultaneously.",
-      "Switch legs quickly in a running motion without letting your posture drop."
-    ],
-    "is_lottie": false,
-    "animation_link": "https://res.cloudinary.com/dyvolu8tc/video/upload/v1773089263/High_Knees_Exercise_Video_Generation_trjemc.mp4"
-  },
-  {
-    "exercise_id": "EX025",
-    "name": "Bird Dog",
-    "type": "bodyweight",
-    "primary_muscles": ["core", "lower back"],
-    "secondary_muscles": ["glutes", "shoulders", "hamstrings"],
-    "body_region": "full body",
-    "movement_pattern": "anti-rotation stability",
-    "difficulty": "beginner",
-    "intensity": "low",
-    "goal_tags": ["core_stability", "balance", "posture", "back_pain_relief"],
-    "estimated_duration": "40s",
-    "overview": "A floor-based stability exercise where opposite arm and leg are extended simultaneously to challenge core control and balance.",
-    "benefits": ["core_strength", "lower_back_strength", "balance", "coordination", "lower_back_pain_prevention"],
-    "contraindications": ["severe_lower_back_injury", "wrist_pain", "knee_pain"],
-    "instructions": [
-      "Start on all fours with hands under shoulders, knees under hips and back flat.",
-      "Extend one arm forward and the opposite leg back while keeping hips level and core tight.",
-      "Hold briefly, return to start and repeat on the other side with control."
-    ],
-    "is_lottie": false,
-    "animation_link": "https://res.cloudinary.com/dyvolu8tc/video/upload/v1773089438/Bird_Dog_Exercise_Video_Generation_pk6kag.mp4"
   }
 ]

@@ -18,14 +18,14 @@ class _InjuryScreenState extends State<InjuryScreen> {
 
   static const List<String> _options = [
     'None',
-    'Back pain',
-    'Knee pain',
-    'Shoulder pain',
-    'Wrist / Hip pain',
-    'Poor cardiovascular endurance',
-    'Neck / shoulder stiffness',
-    'Shortness of breath during activities',
-    'Ankle pain and stiffness',
+    'joint injuries',
+    'shoulder injury',
+    'hip injury',
+    'lower back injury',
+    'balance problems',
+    'ankle instability',
+    'elbow pain',
+    'spinal disc problems',
   ];
 
   void _toggle(String option) {

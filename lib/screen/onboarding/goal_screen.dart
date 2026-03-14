@@ -18,13 +18,13 @@ class _GoalScreenState extends State<GoalScreen> {
 
   static const List<String> _goals = [
     'Fat Burn',
-    'Strength',
-    'Mobility',
-    'General Fitness',
+    'mobility',
+    'warmup',
+    'cardio',
     'Stress Relief',
-    'Cardio Fitness',
-    'Improve Stamina',
-    'Better Posture',
+    'flexibility',
+    'Back pain relief',
+    'posterior chain',
   ];
 
   void _toggle(String goal) {
