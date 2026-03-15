@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 import '../services/onnx_service.dart';
+import '../exercise_filter/main_exercise.dart';
+import './main_screen.dart';
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -11,11 +13,11 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   late OnnxService onnx;
   bool modelLoaded = false;
+  List<Map<String, dynamic>> sessionExercises = [];
 
   @override
   void initState() {
     super.initState();
-    print("HomeScreen initState started");
     loadModel();
   }
 
@@ -28,25 +30,20 @@ class _HomeScreenState extends State<HomeScreen> {
     await onnx.init();
 
     print("Step 3: Model loaded successfully");
-
+    final exercises = await MainExercise.getSessionExercises();
     setState(() {
       modelLoaded = true;
+      sessionExercises = exercises;
     });
     print("Step 4: UI state updated, modelLoaded = true");
   }
 
   @override
   Widget build(BuildContext context) {
-    print("Build method called. modelLoaded = $modelLoaded");
-
     if (!modelLoaded) {
-      print("Model not ready yet -> showing loading spinner");
-
       return const Scaffold(body: Center(child: CircularProgressIndicator()));
     }
-
     print("Model ready -> rendering Home UI");
-
     final textTheme = Theme.of(context).textTheme;
 
     return Scaffold(
@@ -68,14 +65,13 @@ class _HomeScreenState extends State<HomeScreen> {
 
             const SizedBox(height: 28),
 
-            Text(
-              "Your 4 exercises of todays",
-              style: textTheme.titleMedium,
-            ),
+            Text("Your 4 exercises of today", style: textTheme.titleMedium),
 
             const SizedBox(height: 16),
 
-            ...List.generate(4, (index) => _exerciseCard(textTheme)),
+            ...sessionExercises
+                .map((exercise) => _exerciseCard(textTheme, exercise))
+                .toList(),
           ],
         ),
       ),
@@ -83,8 +79,6 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget _buildWeekCalendar(TextTheme textTheme) {
-    print("Building week calendar");
-
     final days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
     return Row(
@@ -121,9 +115,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  Widget _exerciseCard(TextTheme textTheme) {
-    print("Building exercise card");
-
+  Widget _exerciseCard(TextTheme textTheme, Map<String, dynamic> exercise) {
     return Container(
       margin: const EdgeInsets.only(bottom: 14),
       padding: const EdgeInsets.all(16),
@@ -137,18 +129,17 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Row(
         children: [
           const Icon(Icons.fitness_center, size: 28),
-
           const SizedBox(width: 14),
-
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("Jumping Jacks", style: textTheme.titleMedium),
-
+                Text(exercise["name"], style: textTheme.titleMedium),
                 const SizedBox(height: 4),
-
-                Text("30 sec • Cardio", style: textTheme.bodySmall),
+                Text(
+                  "${exercise["estimated_duration"]} • ${exercise["body_region"]}",
+                  style: textTheme.bodySmall,
+                ),
               ],
             ),
           ),
@@ -157,7 +148,12 @@ class _HomeScreenState extends State<HomeScreen> {
             width: 90,
             child: ElevatedButton(
               onPressed: () {
-                print("Start button clicked");
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => MainexerciseScreen(exercises: sessionExercises),
+                  ),
+                );
               },
               child: const Text("Start"),
             ),

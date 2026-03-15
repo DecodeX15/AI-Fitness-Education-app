@@ -28,6 +28,9 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  lottie: ^3.1.0
+  video_player: ^2.9.2
+  flutter_tts: ^4.2.0
   flutter:
     sdk: flutter
 
@@ -66,6 +69,7 @@ flutter:
   - assets/tokenizer.json
   - assets/tokenizer_config.json
   - assets/special_tokens_map.json
+  - assets/animations/
 
   # To add assets to your application, add an assets section, like this:
   # assets:

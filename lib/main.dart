@@ -3,7 +3,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'theme/app_theme.dart';
 import 'screen/onboarding/welcome_screen.dart';
 import 'screen/home_screen.dart';
-import 'exercise_filter/main_exercise.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
@@ -23,8 +22,6 @@ void main() async {
       prefs.containsKey("level");
   // await prefs.clear();
   print("Is onboarded: $isOnboarded");
-  final sessionExercises = await MainExercise.getSessionExercises();
-  print(sessionExercises);
   runApp(MyApp(isOnboarded));
 }
 

@@ -7,7 +7,8 @@ import './algo//scoring.dart';
 class MainExercise {
   static Future<List<Map<String, dynamic>>> getSessionExercises() async {
     final String jsonString = await rootBundle.loadString('assets/exercise_db.json');
-    final List<dynamic> decoded = json.decode(jsonString);
+    final String cleaned = jsonString.trimLeft();
+    final List<dynamic> decoded = json.decode(cleaned);
     final List<Map<String, dynamic>> allExercises = List<Map<String, dynamic>>.from(decoded);
     print("Total exercises: ${allExercises.length}");
     final prefs = await SharedPreferences.getInstance();
